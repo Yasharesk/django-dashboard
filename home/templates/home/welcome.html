@@ -4,17 +4,19 @@
 {% load plotly_dash %}
 <h1>Main Dashboards</h1>
 
+    <div class="{% plotly_class name='Area' %} card" style="height: 100%; width: 100%">
+    {% plotly_app name='Area' ratio=0.45 %}
+    </div>
+
     <div class="{% plotly_class name='OurSample' %} card" style="height: 100%; width: 100%">
     {% plotly_app name='OurSample' ratio=0.45 %}
     </div>
 
+{#    <div class="{% plotly_class name='SimpleExample' %} card" style="height: 100%; width: 100%">#}
+{#    {% plotly_app name='SimpleExample' ratio=0.45 %}#}
+{#    </div>#}
 
-    <div class="{% plotly_class name='SimpleExample' %} card" style="height: 100%; width: 100%">
-    {% plotly_app name='SimpleExample' ratio=0.45 %}
-    </div>
-
-
-    <br>
-    {{ plot1 | safe }}
+{#    <br>#}
+{#    {{ plot1 | safe }}#}
 
 {% endblock %}

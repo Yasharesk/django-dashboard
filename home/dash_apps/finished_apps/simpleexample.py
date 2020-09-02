@@ -25,9 +25,8 @@ app.layout = html.Div([
 
 @app.callback(
                Output('slider-graph', 'figure'),
-              [Input('slider-updatemode', 'value')])
+               [Input('slider-updatemode', 'value')])
 def display_value(value):
-
 
     x = []
     for i in range(value):
